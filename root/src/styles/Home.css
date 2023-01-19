@@ -31,3 +31,12 @@
   margin-left: 650px;
   padding-top: 20px;
 }
+
+.product-header{
+  
+  margin-left: 50%;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+}
