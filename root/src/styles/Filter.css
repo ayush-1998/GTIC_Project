@@ -1,0 +1,117 @@
+.filter-container {
+  position: relative;
+  width: 248px;
+  height: 1960px;
+  left: 100px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.text-container {
+  display: flex;
+  align-items: flex-start;
+}
+.text-icon {
+  margin-left: 9px;
+}
+
+.filter-title {
+  width: 72px;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #191919;
+}
+
+.filter-heading {
+  width: 100px;
+  height: 19px;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #191919;
+}
+
+.filter-text {
+  width: 39px;
+  height: 19px;
+  margin-left: 3px;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #191919;
+}
+
+.filter-range {
+  width: 110px;
+  height: 16px;
+  margin-top: 8px;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.price-input {
+  width: 71px;
+  height: 36px;
+  margin-left: 15px;
+  margin-top: 10px;
+  padding-left: 5px;
+  background: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 8px;
+}
+
+.price-submit {
+  width: 40px;
+  height: 36px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: #5c7f24;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.searchbrand {
+  width: 216px;
+  height: 30px;
+  margin-bottom: 2px;
+
+  margin-left: 10px;
+  padding-left: 10px;
+  background: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 8px;
+}
+
+.form-check {
+  margin-left: 15px;
+}
+
+.form-check-label {
+  height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #191919;
+}
+
+@media (max-width: 1280px) {
+  .filter-container {
+    left: 60px;
+    width: 240px;
+  }
+}
