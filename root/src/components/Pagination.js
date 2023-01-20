@@ -10,7 +10,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
     if (currentPage !== 1) setCurrentPage(currentPage - 1);
   };
   return (
-    <nav style={{ position: "relative", left: "300px", paddingTop:"20px" }}>
+    <nav style={{ position: "relative", left: "300px", paddingTop: "20px" }}>
       <ul className="pagination justify-content-center">
         <li className="">
           <button className="prev-page" onClick={prevPage}>
