@@ -1,0 +1,154 @@
+.cart-heading {
+  margin-left: 610px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.cart-container {
+  width: 900px;
+  margin-left: 200px;
+  border-radius: 8px;
+  background: gainsboro;
+}
+
+.cart1-container {
+  width: 100%;
+}
+
+.vendor-logo {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.product-container {
+  display: flex;
+  height: 150px;
+}
+.product-image {
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 120px;
+  width: 100px;
+}
+
+.productDetail-container {
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-brand {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #191919;
+}
+.product-brand span {
+  font-weight: 500;
+  font-size: 16px;
+}
+.product-detail {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #191919;
+}
+
+.quantity-container {
+}
+.quantity {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+.quantity-text {
+  display: flex;
+}
+.quantity-text span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  text-align: right;
+  color: #191919;
+}
+
+.saveFor {
+  margin-left: 50px;
+}
+
+.product-price {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #191919;
+}
+
+.delivery-container {
+  display: flex;
+  height: 50px;
+}
+.delivery-icon {
+  margin-left: 230px;
+}
+.delivery-text {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #191919;
+}
+
+.checkoutPrice-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  height: 90px;
+  background: #e6e6e6;
+  border-radius: 8px;
+}
+.checkoutPrice-left {
+  width: 50%;
+}
+
+.subtotal {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #191919;
+}
+
+.saving {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5c7f24;
+}
+
+.checkout-btn {
+  margin-left: 370px;
+  margin-top: 25px;
+  width: 200px;
+  background: #5c7f24;
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+}

@@ -58,6 +58,25 @@ function ProductList() {
                   </Card.Text>
 
                   {/* <ListGroup className="list-group-flush">
+      {Array.isArray(products) ? (
+        currentRecords.map((product, key) => {
+          return (
+            <>
+              <Card className="product" key={key}>
+                <Card.Img
+                  variant="top"
+                  className="product-image"
+                  src={product.image}
+                />
+                <Card.Body>
+                  <Card.Text className="brand" style={{ height: "19px" }}>
+                    Brand: <span style={{ fontWeight: 600 }}>{product.brand}</span>
+                  </Card.Text>
+                  <Card.Text className="brand" style={{ height: "38px" }}>
+                    {product.title}
+                  </Card.Text>
+
+                  {/* <ListGroup className="list-group-flush">
                   <ListGroup.Item className="form-check" style={{height:"38px" }}>
                     <input style={{marginLeft:"13px" }} className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
                     <Card.Img variant="top" style={{width:"55px" ,height:"16.59px", marginLeft:"13px" }} src="images/image 97.png" />
