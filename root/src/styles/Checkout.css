@@ -1,0 +1,40 @@
+.checkout-container {
+  background: #e6e6e6;
+  height: 1000px;
+}
+.checkout-text-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkout-text1 {
+  margin-left: 80px;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+.checkout-text2 {
+  margin-left: 5px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+.checkout-text3 {
+  margin-left: 5px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+.checkout-text4 {
+  margin-left: 5px;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666666;
+}

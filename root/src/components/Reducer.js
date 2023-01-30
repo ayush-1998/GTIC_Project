@@ -1,3 +1,9 @@
+Array.prototype.hasMin = function(attrib) {
+  return (this.length && this.reduce(function(prev, curr){ 
+    return prev[attrib] < curr[attrib] ? prev : curr; 
+  })) || null;
+}
+
 const Reducer = (cart = [], action) => {
   if (action.type === "ADD") {
     let tempcart = cart.filter((item) => item.id === action.payload.id);
@@ -10,10 +16,11 @@ const Reducer = (cart = [], action) => {
   if (action.type === "REMOVE") {
     return cart.filter((item) => item.id !== action.payload.id);
   }
+
   if (action.type === "INCREASE") {
     let tempcart = cart.map((item) => {
       if (item.id === action.payload.id) {
-        return { ...item, quantity: item.quantity + 1 };
+        return { ...item, quantity: item.quantity + 1};
       }
       return item;
     });

@@ -10,7 +10,11 @@ import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineCurrencyRupee } from "react-icons/hi";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 const Header = () => {
+  const cart = useSelector(state => (state));
   return (
     <>
       <div className="header-container">
@@ -52,13 +56,14 @@ const Header = () => {
           </div>
           <div className="login-content">Hello, Rohit</div>
         </div>
-        <div className="cart-btn-container">
-          <div className="cart-icon">
-            <BsCart2 />
+        <Link to="/cart">
+          <div className="cart-btn-container">
+            <div className="cart-icon">
+              <BsCart2 />
+            </div>
+            <div className="cart-content">My Cart {cart.length}</div>
           </div>
-          <div className="cart-content">My Cart</div>
-        </div>
-
+        </Link>
         <div className="subheader">
           <div className="dropdown">
             <button
