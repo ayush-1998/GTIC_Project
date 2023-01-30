@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import "../styles/productList.css";
 import { productsData } from "../db.js";
 import Pagination from "../components/Pagination";
+import { useSelector, useDispatch } from "react-redux";
 
 function ProductList() {
   const [products, setProducts] = useState(productsData);
@@ -13,6 +14,10 @@ function ProductList() {
   const indexOfLastRecord = currentPage * recordsPerPage;
   const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
   const currentRecords = products.slice(indexOfFirstRecord, indexOfLastRecord);
+
+  const cart = useSelector((state) => state);
+  console.log(cart);
+  const dispatch = useDispatch();
 
   const handleQuantity = (e, id, name) => {
     e.preventDefault();
@@ -34,6 +39,25 @@ function ProductList() {
 
   return (
     <div className="product-container">
+      {Array.isArray(products) ? (
+        currentRecords.map((product, key) => {
+          return (
+            <>
+              <Card className="product" key={key}>
+                <Card.Img
+                  variant="top"
+                  className="product-image"
+                  src={product.image}
+                />
+                <Card.Body>
+                  <Card.Text className="brand" style={{ height: "19px" }}>
+                    Brand: <span style={{ fontWeight: 600 }}>{product.brand}</span>
+                  </Card.Text>
+                  <Card.Text className="brand" style={{ height: "38px" }}>
+                    {product.title}
+                  </Card.Text>
+
+                  {/* <ListGroup className="list-group-flush">
       {Array.isArray(products) ? (
         currentRecords.map((product, key) => {
           return (
@@ -106,6 +130,7 @@ function ProductList() {
                     <button
                       type="button"
                       className="btn btn-success col-6 cart-button"
+                      onClick={() => dispatch({ type: "ADD", payload: product })}
                     >
                       Add to cart
                     </button>
