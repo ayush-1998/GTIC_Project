@@ -1,14 +1,14 @@
-.checkout-container {
+.payment-container {
   position: relative;
   background: #e6e6e6;
-  height: 1300px;
+  height: 1500px;
 }
-.checkout-text-container {
+.payment-text-container {
   display: flex;
   align-items: flex-start;
 }
 
-.checkout-text1 {
+.payment-text1 {
   margin-left: 80px;
   padding-top: 20px;
   font-style: normal;
@@ -16,21 +16,21 @@
   font-size: 14px;
   line-height: 19px;
 }
-.checkout-text2 {
+.payment-text2 {
   margin-left: 5px;
   padding-top: 20px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
 }
-.checkout-text3 {
+.payment-text3 {
   margin-left: 5px;
   padding-top: 20px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
 }
-.checkout-text4 {
+.payment-text4 {
   margin-left: 5px;
   padding-top: 20px;
   font-style: normal;
@@ -39,54 +39,43 @@
   line-height: 19px;
   color: #666666;
 }
-
-.checkout-left-container {
+.payment-left-container {
   position: absolute;
   width: 750px;
-  height: 1010px;
+  height: 1360px;
   margin-left: 80px;
   margin-top: 30px;
   background: #ffffff;
   border-radius: 8px;
 }
-
-.checkout-right-container {
-  position: absolute;
-  width: 381px;
-  height: 480px;
-  margin-top: 30px;
-  margin-left: 850px;
-  background: #ffffff;
-  border-radius: 8px;
-}
-
-.checkout-address-container {
+.payment-address-container {
   display: flex;
   height: 70px;
 }
 
-.checkout-address-icon {
+.payment-address-icon {
   margin-left: 15px;
   margin-top: 25px;
+  color: #999999;
 }
-.checkout-address-heading {
+.payment-address-heading {
   width: 120px;
   margin-left: 10px;
   margin-top: 28px;
   font-weight: 700;
   font-size: 14px;
-  color: #191919;
+  color: #999999;
 }
-.checkout-address {
+.payment-address {
   width: 400px;
   margin-left: 20px;
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #191919;
+  color: #999999;
 }
-.checkout-change-btn1 {
+.payment-change-btn1 {
   background: #ffffff;
   width: 120px;
   height: 40px;
@@ -99,7 +88,7 @@
   border-radius: 24px;
 }
 
-.checkout-change-btn {
+.payment-change-btn {
   background: #ffffff;
   width: 120px;
   height: 40px;
@@ -112,117 +101,184 @@
   border-radius: 24px;
 }
 
-.checkout-delivery-container {
+.payment-delivery-container {
   display: flex;
   height: 50px;
 }
 
-.checkout-delivery-icon {
+.payment-delivery-icon {
   margin-left: 15px;
   margin-top: 7px;
+  color: #999999;
 }
-.checkout-delivery-heading {
+.payment-delivery-heading {
   width: 120px;
   margin-left: 10px;
   margin-top: 10px;
   font-weight: 700;
   font-size: 14px;
-  color: #191919;
+  color: #999999;
 }
-.checkout-delivery {
+.payment-delivery {
   width: 400px;
   margin-left: 20px;
   margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #191919;
+  color: #999999;
 }
-.checkout-vendor1-details {
+.payment-option-heading-container {
+  width: 100%;
   display: flex;
 }
-.checkout-vendor1 {
+.payment-option-heading-icon {
   margin-left: 15px;
-  height: 27px;
+}
+.payment-option-heading-text {
+  margin-left: 10px;
+  margin-bottom: 25px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 25px;
   color: #191919;
 }
-.checkout-vendor1-logo {
-  margin-left: 15px;
-  height: 27px;
-  width: 130px;
+.payment-option-container {
+  height: 90px;
 }
-.checkout-product-container {
+.payment-option-items {
+  display: flex;
+  height: 50px;
+}
+
+.payment-option-logo img {
+  height: 40px;
+  width: 60px;
+  margin-left: 15px;
+}
+.freecharge-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.mobikwik-img {
+  height: 50px;
+  width: 40px;
+  margin-left: 15px;
+}
+.payment-option-heading {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #191919;
+}
+.payment-option-radio {
+  margin-top: 10px;
+  margin-left: 500px;
+}
+
+/* .payment-form-label {
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #191919;
+}
+.payment-input {
+  margin-top: 20px;
+  margin-left: 100px;
+} */
+.payment-option-text {
+  display: flex;
+  margin-left: 70px;
+  width: 500px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #167059;
+}
+.payment-option-text div {
+  margin-right: 10px;
+}
+.payment-otherPayment {
+  display: flex;
+}
+.payment-otherPayment-rightIcon {
+  margin-top: 5px;
+  margin-left: 450px;
+}
+.payment-otherPayment-icon {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.payment-otherPayment-text {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #191919;
+}
+.payment-upi-container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-left: 60px;
 }
-.checkout-product-block {
+.payment-upi-block {
   position: relative;
   margin: 15px;
-  width: 68px;
-  height: 68px;
+  width: 72px;
+  height: 70px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
-.checkout-product-image {
+.payment-upi-image {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../../public/images/Bournvita.png");
 }
-.checkout-viewmore {
-  margin-left: 20px;
-  margin-top: 5px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  text-decoration-line: underline;
-  color: #31638c;
-}
-.checkout-delivery {
-  margin-left: 20px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #191919;
-}
-.checkout-delivery span {
-  font-weight: 700;
-  margin-left: 5px;
-  font-size: 16px;
-  line-height: 22px;
-  color: #191919;
-}
-.checkout-deliveryTime-container {
-  display: flex;
-  width: 95%;
+.googlepay-img {
   height: 60px;
-  margin-left: 18px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  background: #e6e6e6;
-  border-radius: 4px;
+  width: 70px;
 }
-.checkout-deliveryTime-icon {
-  margin-top: 15px;
-  margin-left: 20px;
+.paytm-img {
+  height: 40px;
+  margin-top: 10px;
+  width: 70px;
 }
-.checkout-deliveryTime-text {
-  margin-top: 17px;
-  margin-left: 15px;
+.payment-upi-text {
+  width: 70px;
+  margin-top: 70px;
+  margin-left: 5px;
+  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 16px;
   color: #191919;
 }
-.checkout-deliveryTime-text span {
-  font-weight: 600;
+.payment-upi-text2 {
+  width: 70px;
+  margin-top: 70px;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #191919;
 }
-.checkout-payment-btn {
+.payment-payment-btn {
   width: 250px;
   height: 46px;
   margin-bottom: 10px;
@@ -231,43 +287,44 @@
   backdrop-filter: blur(16px);
   border-radius: 24px;
 }
-.checkout-payment-container {
+.payment-cod-container {
   display: flex;
-  height: 40px;
 }
-.checkout-payment-icon {
-  margin-left: 20px;
+.payment-radio {
+  margin-top: 17px;
+  margin-left: 450px;
+}
+.payment-text {
   margin-top: 10px;
+  margin-left: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ab5f33;
+}
+.payment-check {
+  margin-top: 15px;
+  margin-left: 25px;
   color: #999999;
 }
-.checkout-payment-text {
-  margin-left: 15px;
-  margin-top: 10px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 25px;
+.payment-label-text {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
   color: #999999;
 }
-.checkout-otherPayment-container {
-  display: flex;
-  height: 40px;
+
+.payment-right-container {
+  position: absolute;
+  width: 381px;
+  height: 480px;
+  margin-top: 30px;
+  margin-left: 850px;
+  background: #ffffff;
+  border-radius: 8px;
 }
-.checkout-otherPayment-icon {
-  margin-left: 20px;
-  margin-top: 10px;
-  color: #999999;
-}
-.checkout-otherPayment-text {
-  margin-left: 15px;
-  margin-top: 10px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 25px;
-  color: #999999;
-}
-.checkout-right-heading {
+.payment-right-heading {
   margin-top: 15px;
   margin-left: 15px;
   font-weight: 700;
@@ -275,13 +332,13 @@
   line-height: 25px;
   color: #191919;
 }
-.checkout-input-group {
+.payment-input-group {
   margin-top: 15px;
   margin-left: 17px;
   height: 50px;
   width: 90%;
 }
-.checkout-apply-btn {
+.payment-apply-btn {
   background: #e6e6e6;
   border-radius: 0px 8px 8px 0px black;
   color: #191919;
@@ -290,7 +347,7 @@
   font-size: 14px;
   line-height: 19px;
 }
-.checkout-voucher-container {
+.payment-voucher-container {
   width: 341px;
   height: 50px;
   margin-top: 20px;
@@ -299,13 +356,13 @@
   background: orange;
   border-radius: 4px;
 }
-.checkout-voucher-text {
+.payment-voucher-text {
   color: white;
   margin-left: 95px;
   padding-top: 10px;
 }
 
-.checkout-right-orderSummary {
+.payment-right-orderSummary {
   margin-top: 15px;
   margin-left: 15px;
   font-style: normal;
@@ -314,7 +371,7 @@
   line-height: 25px;
   color: #191919;
 }
-.checkout-basketValue {
+.payment-basketValue {
   margin-top: 30px;
   margin-left: 15px;
   font-style: normal;
@@ -323,7 +380,7 @@
   line-height: 22px;
   color: #191919;
 }
-.checkout-price {
+.payment-price {
   margin-top: 15px;
   margin-left: 210px;
   font-weight: 700;
@@ -331,17 +388,17 @@
   line-height: 22px;
   color: #191919;
 }
-.checkout-checkbox-container {
+.payment-checkbox-container {
   margin-top: 10px;
 }
-.checkout-checkbox-text {
+.payment-checkbox-text {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #191919;
 }
-.checkout-checkbox-container span {
+.payment-checkbox-container span {
   margin-left: 100px;
   font-style: normal;
   font-weight: 700;
@@ -349,7 +406,7 @@
   line-height: 22px;
   color: #191919;
 }
-.checkout-balance {
+.payment-balance {
   margin-top: 8px;
   font-style: normal;
   font-weight: 400;
@@ -357,7 +414,7 @@
   line-height: 19px;
   color: #666666;
 }
-.checkout-right-totalAmount {
+.payment-right-totalAmount {
   margin-top: 10px;
   margin-left: 15px;
   font-style: normal;
@@ -366,10 +423,10 @@
   line-height: 22px;
   color: #191919;
 }
-.checkout-amount {
+.payment-amount {
   margin-left: 135px;
 }
-.checkout-right-saving-container {
+.payment-right-saving-container {
   display: flex;
   width: 341px;
   height: 50px;
@@ -378,7 +435,7 @@
   background: #e9f3eb;
   border: 1px solid #24a684;
 }
-.checkout-saving-left {
+.payment-saving-left {
   margin-top: 12px;
   margin-left: 15px;
   font-style: normal;
@@ -387,7 +444,7 @@
   line-height: 19px;
   color: #167059;
 }
-.checkout-saving-right {
+.payment-saving-right {
   margin-top: 12px;
   margin-left: 190px;
   font-style: normal;

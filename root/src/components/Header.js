@@ -21,7 +21,7 @@ const Header = () => {
           <div className="form-outline">
             <input
               type="search"
-              placeholder="search"
+              placeholder="Search Products"
               id="form1"
               className="form-control"
             />
@@ -43,14 +43,14 @@ const Header = () => {
             <CiLocationOn />
           </div>
           <div className="location">
-            400021, Mumbai <RiArrowDropDownLine />
+            411045, Pune <RiArrowDropDownLine />
           </div>
         </div>
         <div className="login-btn-container">
           <div className="login-icon">
             <CiUser />
           </div>
-          <div className="login-content">Hello, Rohit</div>
+          <div className="login-content">Hello, Gaurav</div>
         </div>
         <div className="cart-btn-container">
           <div className="cart-icon">
