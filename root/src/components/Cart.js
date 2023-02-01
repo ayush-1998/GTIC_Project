@@ -130,7 +130,7 @@ const Cart = () => {
                     <div className="cart-quantity">Quantity</div>
                     <div className="quantity-button">
                       <div className="row mt-1">
-                        <div className="row col-8">
+                        <div className="row">
                           <div className="input-group mb-3 col-12">
                             <button
                               className="input-group-text col-4"
@@ -178,6 +178,16 @@ const Cart = () => {
                       product.Vendor[0].offerPrice,
                     ) * product.quantity}
                   </div>
+                  <table>
+                    <tr>
+                      <th>logo</th>
+                      <th>logo</th>
+                    </tr>
+                    <tr>
+                      <td>price</td>
+                      <td>price</td>
+                    </tr>
+                  </table>
                 </div>
               );
             })
@@ -221,7 +231,7 @@ const Cart = () => {
                       <div className="cart-quantity">Quantity</div>
                       <div className="quantity-button">
                         <div className="row mt-1">
-                          <div className="row col-8">
+                          <div className="row">
                             <div className="input-group mb-3 col-12">
                               <button
                                 className="input-group-text col-4"
@@ -311,7 +321,7 @@ const Cart = () => {
                       <div className="cart-quantity">Quantity</div>
                       <div className="quantity-button">
                         <div className="row mt-1">
-                          <div className="row col-8">
+                          <div className="row">
                             <div className="input-group mb-3 col-12">
                               <button
                                 className="input-group-text col-4"
@@ -385,7 +395,7 @@ const Cart = () => {
             <Link to="/checkout">
               <div className="cart-chekoutPrice-right">
                 <button type="button" className="btn btn-success cart-checkout-btn">
-                Checkout
+                  Checkout
                 </button>
               </div>
             </Link>

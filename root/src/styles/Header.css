@@ -1,7 +1,7 @@
 .header-container {
   position: relative;
   width: 100%;
-  height: 183px;
+  height: 124px;
   left: 0px;
   top: 0px;
   background: #ffffff;
@@ -11,7 +11,7 @@
 .header-logo-container {
   position: absolute;
   width: 229px;
-  height: 111px;
+  height: 51px;
   left: 100px;
   top: 0px;
   background: #e6e6e6;
@@ -21,12 +21,11 @@
   position: absolute;
   width: 164px;
   height: 33px;
-  left: 36px;
-  top: 39px;
-  /* font-family: 'Open Sans'; */
+  left: 40px;
+  top: 10px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 33px;
   display: flex;
   align-items: center;
@@ -35,6 +34,8 @@
 
 .dropdown {
   position: absolute;
+  top: 60px;
+  left: 100px;
   width: 250px;
   height: 56px;
   background: #5c7f24;
@@ -45,15 +46,15 @@
   width: 282px;
   height: 56px;
   left: 16px;
-  top: 17px;
+  top: 10px;
 }
 .form-outline {
   box-sizing: border-box;
   position: relative;
-  width: 700px;
+  width: 530px;
   height: 52px;
-  left: 390px;
-  top: 59px;
+  left: 400px;
+  top: 63px;
   background: #ffffff;
 }
 
@@ -61,8 +62,8 @@
   box-sizing: border-box;
   width: 56px;
   height: 39px;
-  left: 335px;
-  top: 59px;
+  left: 345px;
+  top: 63px;
   background: #5c7f24;
   border: 1px solid #999999;
 }
@@ -79,7 +80,7 @@
   display: flex;
   position: absolute;
   top: 15px;
-  left: 1150px;
+  left: 1200px;
 }
 .phone-icon {
   margin-right: 3px;
@@ -102,7 +103,7 @@
   display: flex;
   position: absolute;
   top: 15px;
-  left: 1300px;
+  left: 1330px;
 }
 .location-icon {
   margin-right: 3px;
@@ -128,17 +129,18 @@
   align-items: center;
   width: 150px;
   height: 22px;
-  left: 1120px;
+  left: 930px;
   top: 65px;
   cursor: pointer;
 }
 .login-icon {
-  margin-right: 3px;
+  margin-right: 5px;
+  border-radius: 50%;
 }
 .login-content {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
 }
 
@@ -149,7 +151,7 @@
   align-items: center;
   width: 120px;
   height: 22px;
-  left: 1300px;
+  left: 1070px;
   top: 65px;
   cursor: pointer;
 }
@@ -161,18 +163,8 @@
 .cart-content {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
-}
-
-.subheader {
-  position: absolute;
-  width: 85%;
-  height: 56px;
-  top: 127px;
-  left: 100px;
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
 }
 
 .offer-container {
@@ -183,40 +175,27 @@
   left: 320px;
   top: 15px;
 }
-.offer-icon {
-  margin-right: 8px;
-  padding-bottom: 2px;
-  color: #e58129;
-}
-.offer-content {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-  color: #191919;
-}
 
 .saving-container {
   position: absolute;
   display: flex;
   width: 200px;
   height: 22px;
-  left: 420px;
-  top: 15px;
+  left: 1200px;
+  top: 60px;
 }
 .saving-icon {
-  margin-right: 8px;
+  margin-right: 2px;
   padding-bottom: 2px;
-  color: #e58129;
+  color: black;
 }
 .saving-content {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: #191919;
 }
@@ -226,20 +205,21 @@
   display: flex;
   width: 200px;
   height: 22px;
-  left: 620px;
-  top: 15px;
+  left: 1330px;
+  top: 60px;
 }
 .loyalty-icon {
-  margin-right: 8px;
+  margin-right: 5px;
   padding-bottom: 2px;
-  color: #e58129;
+  color: black;
 }
 .loyalty-content {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: #191919;
 }
@@ -250,31 +230,38 @@
   }
 
   .form-outline {
-    width: 560px;
+    width: 330px;
     left: 360px;
+  }
+
+  .dropdown {
+    left: 60px;
   }
   .search-btn {
     left: 307px;
   }
 
-  .subheader {
-    width: 92%;
-    left: 60px;
-  }
-
   .phone-container {
-    left: 960px;
+    left: 930px;
   }
 
   .location-container {
-    left: 1080px;
+    left: 1060px;
   }
 
   .login-btn-container {
-    left: 940px;
+    left: 700px;
   }
 
   .cart-btn-container {
-    left: 1080px;
+    left: 825px;
+  }
+  .saving-container {
+    left: 940px;
+    top: 65px;
+  }
+  .loyalty-container {
+    left: 1070px;
+    top: 65px;
   }
 }

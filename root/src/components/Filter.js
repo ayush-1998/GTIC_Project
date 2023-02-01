@@ -70,6 +70,120 @@ const Filter = () => {
           <div className="text-icon">
             <RiArrowDropUpLine />
           </div>
+          <div className="filter-text">PRICE</div>
+        </div>
+        <input
+          className="searchbrand"
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Search Type"
+        ></input>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">High to Low</label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">Low to High</label>
+        </div>
+        <hr />
+        <div className="text-container">
+          <div className="text-icon">
+            <RiArrowDropUpLine />
+          </div>
+          <div className="filter-text">DELIVERY</div>
+        </div>
+        <input
+          className="searchbrand"
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Search Type"
+        ></input>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">1 hr</label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">1 hr - 2 hr</label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">Next day</label>
+        </div>
+        <hr />
+        <div className="text-container">
+          <div className="text-icon">
+            <RiArrowDropUpLine />
+          </div>
+          <div className="filter-text">POPULARITY</div>
+        </div>
+        <input
+          className="searchbrand"
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Search Type"
+        ></input>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">1 star</label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">2 star</label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">3 star</label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label">4 star</label>
+        </div>
+        <hr />
+        <div className="text-container">
+          <div className="text-icon">
+            <RiArrowDropUpLine />
+          </div>
           <div className="filter-text">BRAND</div>
         </div>
         <input
@@ -454,123 +568,7 @@ const Filter = () => {
             <label className="form-check-label">100 gm (32)</label>
           </div>
 
-          <hr />
-          <div className="text-container">
-            <div className="text-icon">
-              <RiArrowDropUpLine />
-            </div>
-            <div className="filter-text">DELIVERY</div>
-          </div>
-          <input
-            className="searchbrand"
-            type="text"
-            name="text"
-            id="text"
-            placeholder="Search Type"
-          ></input>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">1 hr</label>
-          </div>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">1 hr - 2 hr</label>
-          </div>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">Next day</label>
-          </div>
-          <hr />
-
-          <div className="text-container">
-            <div className="text-icon">
-              <RiArrowDropUpLine />
-            </div>
-            <div className="filter-text">POPULARITY</div>
-          </div>
-          <input
-            className="searchbrand"
-            type="text"
-            name="text"
-            id="text"
-            placeholder="Search Type"
-          ></input>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">1 star</label>
-          </div>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">2 star</label>
-          </div>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">3 star</label>
-          </div>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">4 star</label>
-          </div>
-          <hr />
-          <div className="text-container">
-            <div className="text-icon">
-              <RiArrowDropUpLine />
-            </div>
-            <div className="filter-text">PRICE</div>
-          </div>
-          <input
-            className="searchbrand"
-            type="text"
-            name="text"
-            id="text"
-            placeholder="Search Type"
-          ></input>
           {/* <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">High to Low</label>
-          </div>
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label">Low to High</label>
-          </div> */}
-
-          <div className="form-check">
             <input
               className="form-check-input"
               type="radio"
@@ -587,7 +585,7 @@ const Filter = () => {
               id="flexRadioDefault2"
             />
             <label className="form-check-label">Low to High</label>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

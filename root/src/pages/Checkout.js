@@ -5,7 +5,7 @@ import { GoLocation } from "react-icons/go";
 import { BiTime } from "react-icons/bi";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { MdOutlinePayments } from "react-icons/md";
-import { useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
@@ -97,25 +97,28 @@ const Checkout = () => {
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
               <div className="checkout-vendor1">Shipment 1:</div>
-              <div className="checkout-vendor1-logo"><img src="images/image 97.png" alt="cart" /></div>
+              <div className="checkout-vendor1-logo">
+                <img src="images/image 97.png" alt="cart" />
+              </div>
             </div>
             <div className="checkout-product-container">
               {Array.isArray([...amazon]) ? (
                 [...amazon].map((product, key) => {
                   return (
-                   
-                    <div className="checkout-product-block"  key={key}>
-                      <img className="checkout-product-image" src={product.image} alt="cart" />
+                    <div className="checkout-product-block" key={key}>
+                      <img
+                        className="checkout-product-image"
+                        src={product.image}
+                        alt="cart"
+                      />
                     </div>
-                   
                   );
                 })
               ) : (
                 <></>
               )}
-             
             </div>
-            
+
             <div className="checkout-viewmore">View {amazon.size} items</div>
             <div className="checkout-delivery">
               Delivery Charges: <span>₹0</span>
@@ -136,15 +139,20 @@ const Checkout = () => {
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
               <div className="checkout-vendor1">Shipment 1:</div>
-              <div className="checkout-vendor1-logo"><img src="images/image 98.png" alt="cart" /></div>
+              <div className="checkout-vendor1-logo">
+                <img src="images/image 98.png" alt="cart" />
+              </div>
             </div>
             <div className="checkout-product-container">
               {Array.isArray([...bigBasket]) ? (
                 [...bigBasket].map((product, key) => {
                   return (
-                  
                     <div className="checkout-product-block" key={key}>
-                      <img className="checkout-product-image" src={product.image} alt="cart" />
+                      <img
+                        className="checkout-product-image"
+                        src={product.image}
+                        alt="cart"
+                      />
                     </div>
                   );
                 })
@@ -154,14 +162,14 @@ const Checkout = () => {
             </div>
             <div className="checkout-viewmore">View {bigBasket.size} items</div>
             <div className="checkout-delivery">
-  Delivery Charges: <span>₹0</span>
+              Delivery Charges: <span>₹0</span>
             </div>
             <div className="checkout-deliveryTime-container">
               <div className="checkout-deliveryTime-icon">
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-    Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
               </div>
             </div>
             <hr />
@@ -172,14 +180,20 @@ const Checkout = () => {
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
               <div className="checkout-vendor1">Shipment 1:</div>
-              <div className="checkout-vendor1-logo"><img src="images/image 102.png" alt="cart" /></div>
+              <div className="checkout-vendor1-logo">
+                <img src="images/image 102.png" alt="cart" />
+              </div>
             </div>
             <div className="checkout-product-container">
               {Array.isArray([...blinkit]) ? (
                 [...blinkit].map((product, key) => {
                   return (
-                    <div className="checkout-product-block"  key={key}>
-                      <img className="checkout-product-image" src={product.image} alt="cart" />
+                    <div className="checkout-product-block" key={key}>
+                      <img
+                        className="checkout-product-image"
+                        src={product.image}
+                        alt="cart"
+                      />
                     </div>
                   );
                 })
@@ -189,14 +203,14 @@ const Checkout = () => {
             </div>
             <div className="checkout-viewmore">View {blinkit.size} items</div>
             <div className="checkout-delivery">
-  Delivery Charges: <span>₹0</span>
+              Delivery Charges: <span>₹0</span>
             </div>
             <div className="checkout-deliveryTime-container">
               <div className="checkout-deliveryTime-icon">
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-    Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
               </div>
             </div>
             <hr />
@@ -234,7 +248,7 @@ const Checkout = () => {
           </div> */}
           <Link to="/payment">
             <button type="button" className="btn btn-success checkout-payment-btn">
-            Continue to Payment
+              Continue to Payment
             </button>
           </Link>
           <hr />
