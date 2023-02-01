@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const cart = useSelector(state => (state));
+  const cart = useSelector((state) => state);
   return (
     <>
       <div className="header-container">
