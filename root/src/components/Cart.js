@@ -5,6 +5,7 @@ import "../styles/Cart.css";
 import { BiTime } from "react-icons/bi";
 import Filter from "./Filter";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cart = useSelector((state) => state);
@@ -181,12 +182,10 @@ const Cart = () => {
                     <tr>
                       <th>logo</th>
                       <th>logo</th>
-                     
                     </tr>
                     <tr>
                       <td>price</td>
                       <td>price</td>
-                     
                     </tr>
                   </table>
                 </div>
@@ -393,11 +392,13 @@ const Cart = () => {
               <div className="cart-subtotal">Subtotal (6 items): ₹ {total()[0]}</div>
               <div className="cart-saving"> Saving: ₹ {total()[1]}</div>
             </div>
-            <div className="cart-chekoutPrice-right">
-              <button type="button" className="btn btn-success cart-checkout-btn">
-                Checkout
-              </button>
-            </div>
+            <Link to="/checkout">
+              <div className="cart-chekoutPrice-right">
+                <button type="button" className="btn btn-success cart-checkout-btn">
+                  Checkout
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

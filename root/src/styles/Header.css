@@ -176,7 +176,6 @@
   top: 15px;
 }
 
-
 .saving-container {
   position: absolute;
   display: flex;
@@ -234,7 +233,7 @@
     width: 330px;
     left: 360px;
   }
-   
+
   .dropdown {
     left: 60px;
   }
@@ -265,5 +264,4 @@
     left: 1070px;
     top: 65px;
   }
-
 }

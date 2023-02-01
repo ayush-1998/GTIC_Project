@@ -172,7 +172,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../../public/images/Bournvita.png");
 }
 .checkout-viewmore {
   margin-left: 20px;
@@ -397,35 +396,34 @@
   color: #167059;
 }
 @media (max-width: 1280px) {
-.checkout-text1 {
-  margin-left: 80px;
-  padding-top: 20px;
-}
-.checkout-left-container {
-   margin-left: 80px;
-   width: 750px;
-}
-.checkout-right-container {
-  width: 381px;
-  margin-left: 850px;
-}
-.checkout-change-btn1 {
-  margin-left: 20px;
-}
-.checkout-change-btn {
-  margin-left: 20px;
-}
-.checkout-voucher-container {
-  width: 341px;
-}
-.checkout-right-saving-container {
-  width: 341px;
-}
-.checkout-saving-right {
-  margin-left: 190px;
-}
-.checkout-payment-btn {
-  margin-left: 480px;
-}
-
+  .checkout-text1 {
+    margin-left: 80px;
+    padding-top: 20px;
+  }
+  .checkout-left-container {
+    margin-left: 80px;
+    width: 750px;
+  }
+  .checkout-right-container {
+    width: 381px;
+    margin-left: 850px;
+  }
+  .checkout-change-btn1 {
+    margin-left: 20px;
+  }
+  .checkout-change-btn {
+    margin-left: 20px;
+  }
+  .checkout-voucher-container {
+    width: 341px;
+  }
+  .checkout-right-saving-container {
+    width: 341px;
+  }
+  .checkout-saving-right {
+    margin-left: 190px;
+  }
+  .checkout-payment-btn {
+    margin-left: 480px;
+  }
 }

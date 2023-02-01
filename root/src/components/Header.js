@@ -4,7 +4,7 @@
 import React from "react";
 import "../styles/Header.css";
 import { AiOutlineSearch } from "react-icons/ai";
-import {  CiLocationOn } from "react-icons/ci";
+import { CiLocationOn } from "react-icons/ci";
 import { BsCart2, BsTrophy } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineCurrencyRupee } from "react-icons/hi";
@@ -92,7 +92,7 @@ const Header = () => {
           </div>
           <div className="login-content">Hello, Gaurav</div>
         </div>
-        <Link style={{color:"black"}} to="/cart">
+        <Link style={{ color: "black" }} to="/cart">
           <div className="cart-btn-container">
             <div className="cart-icon">
               <BsCart2 />
