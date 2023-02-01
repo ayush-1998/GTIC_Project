@@ -50,12 +50,15 @@ function ProductList() {
                   src={product.image}
                 />
                 <Card.Body>
-                  <Card.Text className="brand" style={{ height: "19px" }}>
+                  <Card.Text
+                    className="brand"
+                    style={{ height: "20px", borderBottom: "1px solid #e6e6e6" }}
+                  >
                     Brand: <span style={{ fontWeight: 600 }}>{product.brand}</span>
                   </Card.Text>
-                  <Card.Text className="brand" style={{ height: "38px" }}>
+                  <p className="brand" style={{ height: "20px" }}>
                     {product.title}
-                  </Card.Text>
+                  </p>
 
                   {/* <ListGroup className="list-group-flush">
       {Array.isArray(products) ? (
@@ -99,7 +102,9 @@ function ProductList() {
                     </label>
                   </ListGroup.Item>
                 </ListGroup> */}
-                  <div className="row mt-1">
+
+                  <div className="row">
+                    <span className="quantity-text">Quantity</span>
                     <div className="row col-6">
                       <div className="input-group mb-3 col-12">
                         <button

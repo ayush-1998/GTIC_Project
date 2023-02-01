@@ -9,7 +9,7 @@
 }
 
 .payment-text1 {
-  margin-left: 80px;
+  margin-left: 100px;
   padding-top: 20px;
   font-style: normal;
   font-weight: 600;
@@ -41,9 +41,9 @@
 }
 .payment-left-container {
   position: absolute;
-  width: 750px;
+  width: 900px;
   height: 1360px;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 30px;
   background: #ffffff;
   border-radius: 8px;
@@ -79,7 +79,7 @@
   background: #ffffff;
   width: 120px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 150px;
   margin-top: 22px;
   margin-right: 10px;
   color: #5c7f24;
@@ -92,7 +92,7 @@
   background: #ffffff;
   width: 120px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 150px;
   margin-top: 10px;
   margin-right: 10px;
   color: #5c7f24;
@@ -180,7 +180,7 @@
 }
 .payment-option-radio {
   margin-top: 10px;
-  margin-left: 500px;
+  margin-left: 630px;
 }
 
 /* .payment-form-label {
@@ -198,7 +198,7 @@
 .payment-option-text {
   display: flex;
   margin-left: 70px;
-  width: 500px;
+  width: 620px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -213,7 +213,7 @@
 }
 .payment-otherPayment-rightIcon {
   margin-top: 5px;
-  margin-left: 450px;
+  margin-left: 570px;
 }
 .payment-otherPayment-icon {
   margin-left: 20px;
@@ -282,7 +282,7 @@
   width: 250px;
   height: 46px;
   margin-bottom: 10px;
-  margin-left: 480px;
+  margin-left: 600px;
   background: #5c7f24;
   backdrop-filter: blur(16px);
   border-radius: 24px;
@@ -292,7 +292,7 @@
 }
 .payment-radio {
   margin-top: 17px;
-  margin-left: 450px;
+  margin-left: 570px;
 }
 .payment-text {
   margin-top: 10px;
@@ -317,10 +317,10 @@
 
 .payment-right-container {
   position: absolute;
-  width: 381px;
+  width: 400px;
   height: 480px;
   margin-top: 30px;
-  margin-left: 850px;
+  margin-left: 1070px;
   background: #ffffff;
   border-radius: 8px;
 }
@@ -348,7 +348,7 @@
   line-height: 19px;
 }
 .payment-voucher-container {
-  width: 341px;
+  width: 360px;
   height: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -428,7 +428,7 @@
 }
 .payment-right-saving-container {
   display: flex;
-  width: 341px;
+  width: 360px;
   height: 50px;
   margin-top: 20px;
   margin-left: 20px;
@@ -446,10 +446,54 @@
 }
 .payment-saving-right {
   margin-top: 12px;
-  margin-left: 190px;
+  margin-left: 200px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   color: #167059;
+}
+@media (max-width: 1280px) {
+.payment-text1 {
+  margin-left: 80px;
+  padding-top: 20px;
+}
+.payment-left-container {
+   margin-left: 80px;
+   width: 750px;
+}
+.payment-right-container {
+  width: 381px;
+  margin-left: 850px;
+}
+.payment-change-btn1 {
+  margin-left: 20px;
+}
+.payment-change-btn {
+  margin-left: 20px;
+}
+.payment-voucher-container {
+  width: 341px;
+}
+.payment-right-saving-container {
+  width: 341px;
+}
+.payment-saving-right {
+  margin-left: 190px;
+}
+.payment-option-radio {
+  margin-left: 500px;
+}
+.payment-option-text {
+  width: 500px;
+}
+.payment-otherPayment-rightIcon {
+  margin-left: 430px;
+}
+.payment-radio {
+  margin-left: 430px;
+}
+.payment-payment-btn {
+  margin-left: 480px;
+}
 }

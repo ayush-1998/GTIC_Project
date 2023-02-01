@@ -9,7 +9,7 @@
 }
 
 .checkout-text1 {
-  margin-left: 80px;
+  margin-left: 100px;
   padding-top: 20px;
   font-style: normal;
   font-weight: 600;
@@ -42,9 +42,9 @@
 
 .checkout-left-container {
   position: absolute;
-  width: 750px;
+  width: 900px;
   height: 1010px;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 30px;
   background: #ffffff;
   border-radius: 8px;
@@ -52,10 +52,10 @@
 
 .checkout-right-container {
   position: absolute;
-  width: 381px;
+  width: 400px;
   height: 480px;
   margin-top: 30px;
-  margin-left: 850px;
+  margin-left: 1070px;
   background: #ffffff;
   border-radius: 8px;
 }
@@ -90,7 +90,7 @@
   background: #ffffff;
   width: 120px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 150px;
   margin-top: 22px;
   margin-right: 10px;
   color: #5c7f24;
@@ -103,7 +103,7 @@
   background: #ffffff;
   width: 120px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 150px;
   margin-top: 10px;
   margin-right: 10px;
   color: #5c7f24;
@@ -226,7 +226,7 @@
   width: 250px;
   height: 46px;
   margin-bottom: 10px;
-  margin-left: 480px;
+  margin-left: 600px;
   background: #5c7f24;
   backdrop-filter: blur(16px);
   border-radius: 24px;
@@ -291,7 +291,7 @@
   line-height: 19px;
 }
 .checkout-voucher-container {
-  width: 341px;
+  width: 360px;
   height: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -371,7 +371,7 @@
 }
 .checkout-right-saving-container {
   display: flex;
-  width: 341px;
+  width: 360px;
   height: 50px;
   margin-top: 20px;
   margin-left: 20px;
@@ -389,10 +389,43 @@
 }
 .checkout-saving-right {
   margin-top: 12px;
-  margin-left: 190px;
+  margin-left: 200px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   color: #167059;
+}
+@media (max-width: 1280px) {
+.checkout-text1 {
+  margin-left: 80px;
+  padding-top: 20px;
+}
+.checkout-left-container {
+   margin-left: 80px;
+   width: 750px;
+}
+.checkout-right-container {
+  width: 381px;
+  margin-left: 850px;
+}
+.checkout-change-btn1 {
+  margin-left: 20px;
+}
+.checkout-change-btn {
+  margin-left: 20px;
+}
+.checkout-voucher-container {
+  width: 341px;
+}
+.checkout-right-saving-container {
+  width: 341px;
+}
+.checkout-saving-right {
+  margin-left: 190px;
+}
+.checkout-payment-btn {
+  margin-left: 480px;
+}
+
 }

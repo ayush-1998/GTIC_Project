@@ -1,8 +1,12 @@
-Array.prototype.hasMin = function(attrib) {
-  return (this.length && this.reduce(function(prev, curr){ 
-    return prev[attrib] < curr[attrib] ? prev : curr; 
-  })) || null;
-}
+Array.prototype.hasMin = function (attrib) {
+  return (
+    (this.length &&
+      this.reduce(function (prev, curr) {
+        return prev[attrib] < curr[attrib] ? prev : curr;
+      })) ||
+    null
+  );
+};
 
 const Reducer = (cart = [], action) => {
   if (action.type === "ADD") {
@@ -20,7 +24,7 @@ const Reducer = (cart = [], action) => {
   if (action.type === "INCREASE") {
     let tempcart = cart.map((item) => {
       if (item.id === action.payload.id) {
-        return { ...item, quantity: item.quantity + 1};
+        return { ...item, quantity: item.quantity + 1 };
       }
       return item;
     });
