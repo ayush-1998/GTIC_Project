@@ -9,8 +9,27 @@ import { BsWallet2 } from "react-icons/bs";
 import { HiOutlineCash } from "react-icons/hi";
 import { SiRazorpay } from "react-icons/si";
 import { RxCaretRight } from "react-icons/rx";
+import { useSelector } from "react-redux";
 
 const Payment = () => {
+  const cart = useSelector((state) => state);
+  const minPrice = (product) => {
+    return product.Vendor.reduce(
+      (min, b) => Math.min(min, b.offerPrice),
+      product.Vendor[0].offerPrice,
+    );
+  };
+  const total = () => {
+    var subtotal = 0;
+    var savings = 0;
+    cart.map((product) => {
+      subtotal += minPrice(product) * product.quantity;
+      savings +=
+        (product.Vendor.hasMin("offerPrice").actualPrice - minPrice(product)) *
+        product.quantity;
+    });
+    return [subtotal, savings];
+  };
   return (
     <>
       <div className="payment-container">
@@ -294,7 +313,7 @@ const Payment = () => {
           <hr />
           <div className="payment-right-orderSummary">Order Summary</div>
           <span className="payment-basketValue">Basket Value</span>
-          <span className="payment-price">₹1051</span>
+          <span className="payment-price">₹ {total()[0]}</span>
           <div className="form-check payment-checkbox-container">
             <input
               className="form-check-input"
@@ -312,11 +331,11 @@ const Payment = () => {
           <hr />
           <div className="payment-right-totalAmount">
             <span>Total Amount Payable</span>
-            <span className="payment-amount">₹1051</span>
+            <span className="payment-amount">₹ {total()[0]}</span>
           </div>
           <div className="payment-right-saving-container">
             <div className="payment-saving-left">Total Savings</div>
-            <div className="payment-saving-right">₹164</div>
+            <div className="payment-saving-right">₹ {total()[1]}</div>
           </div>
         </div>
       </div>
