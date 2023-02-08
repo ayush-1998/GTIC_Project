@@ -92,6 +92,7 @@ const Filter = () => {
             className="form-check-input"
             type="checkbox"
             id="flexCheckDefault"
+            checked
           />
           <label className="form-check-label">Low to High</label>
         </div>

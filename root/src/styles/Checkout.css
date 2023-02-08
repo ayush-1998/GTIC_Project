@@ -1,7 +1,7 @@
 .checkout-container {
   position: relative;
   background: #e6e6e6;
-  height: 1300px;
+  height: 1500px;
 }
 .checkout-text-container {
   display: flex;
@@ -43,7 +43,7 @@
 .checkout-left-container {
   position: absolute;
   width: 900px;
-  height: 1010px;
+  height: auto;
   margin-left: 100px;
   margin-top: 30px;
   background: #ffffff;
@@ -250,7 +250,7 @@
 }
 .checkout-otherPayment-container {
   display: flex;
-  height: 40px;
+  height: 60px;
 }
 .checkout-otherPayment-icon {
   margin-left: 20px;

@@ -7,6 +7,7 @@ import Cart from "./components/Cart";
 import Checkout from "./pages/Checkout";
 import { Routes, Route } from "react-router-dom";
 import Payment from "./pages/Payment";
+//import Mycart from "./components/Mycart";
 
 function App() {
   return (

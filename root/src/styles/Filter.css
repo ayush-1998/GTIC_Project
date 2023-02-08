@@ -1,5 +1,5 @@
 .filter-container {
-  position: relative;
+  position: absolute;
   width: 248px;
   height: 1960px;
   left: 100px;

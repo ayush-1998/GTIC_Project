@@ -113,91 +113,91 @@ const Cart = () => {
           <div className="cart-vendor-logo">
             <img src="images/image 97.png" alt="cart" />
           </div>
+          {/* <hr className="horizontal"/> */}
           {Array.isArray([...amazon]) ? (
             [...amazon].map((product, key) => {
               return (
-                <div className="cart-product-container" key={key}>
-                  <div className="cart-product-image">
-                    <img src={product.image} alt="cart" />
-                  </div>
-                  <div className="cart-productDetail-container">
-                    <div className="cart-product-brand">
-                      Brand : <span>{product.brand}</span>
+                <>
+                  <div className="cart-product-container" key={key}>
+                    <div className="cart-product-image">
+                      <img src={product.image} alt="cart" />
                     </div>
-                    <div className="cart-product-detail">{product.title}</div>
-                  </div>
-                  <div className="cart-quantity-container">
-                    <div className="cart-quantity">Quantity</div>
-                    <div className="quantity-button">
-                      <div className="row mt-1">
-                        <div className="row">
-                          <div className="input-group mb-3 col-12">
-                            <button
-                              className="input-group-text col-4"
-                              name="decrQuantity"
-                              onClick={(e) => {
-                                handleQuantity(e, product, "decrQuantity");
-                              }}
-                            >
-                              -
-                            </button>
-                            <input
-                              type="text"
-                              className="form-control col-4"
-                              value={product.quantity}
-                            />
-                            <button
-                              className="input-group-text col-4"
-                              name="incQuantity"
-                              onClick={(e) => {
-                                handleQuantity(e, product, "incQuantity");
-                              }}
-                            >
-                              +
-                            </button>
+                    <div className="cart-productDetail-container">
+                      <div className="cart-product-brand">
+                        Brand : <span>{product.brand}</span>
+                      </div>
+                      <div className="cart-product-detail">{product.title}</div>
+                    </div>
+                    <div className="cart-quantity-container">
+                      <div className="cart-quantity">Quantity</div>
+                      <div className="quantity-button">
+                        <div className="row mt-1">
+                          <div className="row">
+                            <div className="input-group mb-3 col-12">
+                              <button
+                                className="input-group-text col-4"
+                                name="decrQuantity"
+                                onClick={(e) => {
+                                  handleQuantity(e, product, "decrQuantity");
+                                }}
+                              >
+                                -
+                              </button>
+                              <input
+                                type="text"
+                                className="form-control col-4"
+                                value={product.quantity}
+                              />
+                              <button
+                                className="input-group-text col-4"
+                                name="incQuantity"
+                                onClick={(e) => {
+                                  handleQuantity(e, product, "incQuantity");
+                                }}
+                              >
+                                +
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
+                      <div className="cart-quantity-text">
+                        <span
+                          type="button"
+                          onClick={() => {
+                            removeProduct(product);
+                          }}
+                        >
+                          Delete
+                        </span>
+                        <span className="cart-saveFor">Save for later</span>
+                      </div>
                     </div>
-                    <div className="cart-quantity-text">
-                      <span
-                        type="button"
-                        onClick={() => {
-                          removeProduct(product);
-                        }}
-                      >
-                        Delete
-                      </span>
-                      <span className="cart-saveFor">Save for later</span>
+                    <div className="cart-product-price">
+                      ₹{" "}
+                      {product.Vendor.reduce(
+                        (min, b) => Math.min(min, b.offerPrice),
+                        product.Vendor[0].offerPrice,
+                      ) * product.quantity}
                     </div>
+                    <table>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
                   </div>
-                  <div className="cart-product-price">
-                    ₹{" "}
-                    {product.Vendor.reduce(
-                      (min, b) => Math.min(min, b.offerPrice),
-                      product.Vendor[0].offerPrice,
-                    ) * product.quantity}
-                  </div>
-                  <table>
-                    <tr>
-                      <th>logo</th>
-                      <th>logo</th>
-                    </tr>
-                    <tr>
-                      <td>price</td>
-                      <td>price</td>
-                    </tr>
-                  </table>
-                </div>
+                  <hr />
+                </>
               );
             })
           ) : (
             <></>
           )}
-
-          <hr />
-
-          <hr />
 
           <div className="cart-delivery-container">
             <div className="cart-delivery-icon">
