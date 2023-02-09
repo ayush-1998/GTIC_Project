@@ -55,7 +55,7 @@ const Filter = () => {
             id="text"
             defaultValue="10"
           ></input>
-          <BsDash/>
+          <BsDash />
           <input
             className="price-input"
             type="text"

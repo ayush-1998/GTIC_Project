@@ -17,7 +17,6 @@ const Checkout = () => {
   const [bigBasket, setBigBasket] = useState(new Set());
   const [blinkit, setBlinkIt] = useState(new Set());
 
-
   useEffect(() => {
     setCart();
     window.scrollTo(0, 0);
@@ -179,7 +178,7 @@ const Checkout = () => {
                 <span>
                   {" "}
                   Today, between {moment().add(1, "h").format("hh:mm A")} -{" "}
-                  {moment().add(5, "h").format("hh:mm A")}
+                  {moment().add(2, "h").format("hh:mm A")}
                 </span>
               </div>
             </div>
@@ -222,7 +221,10 @@ const Checkout = () => {
               </div>
               <div className="checkout-deliveryTime-text">
                 Delivery by{" "}
-                <span>Today, {moment().add(1, "h").format("hh:mm A")}</span>
+                <span>
+                    Today, between {moment().add(30, "m").format("hh:mm A")} -{" "}
+                  {moment().add(1, "h").format("hh:mm A")}
+                </span>
               </div>
             </div>
             <hr />

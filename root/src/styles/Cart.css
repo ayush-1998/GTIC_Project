@@ -1,6 +1,6 @@
 .mycart-container {
   background: #e6e6e6;
-  height: 2700px;
+  height: 2900px;
 }
 .cart-heading {
   position: absolute;
@@ -16,7 +16,6 @@
 .cart-container {
   width: 950px;
   position: relative;
-
   left: 250px;
   padding-bottom: 10px;
   margin-left: 200px;
@@ -30,7 +29,7 @@
 
 .cart-vendor-logo {
   margin-top: 15px;
-  margin-left: 15px;
+  margin-right: 59px;
 }
 
 .cart-product-container {
@@ -41,12 +40,12 @@
   margin-left: 20px;
   margin-top: 10px;
   height: 120px;
-  /* width: 100px; */
+  width: 120px;
 }
 
 .cart-productDetail-container {
   margin-left: 15px;
-  margin-top: 50px;
+  margin-top: 35px;
   /* width: 220px; */
   display: flex;
   flex-direction: column;
@@ -74,7 +73,7 @@
 }
 
 .cart-quantity-container {
-  width: 150px;
+  width: 170px;
   margin-right: 25px;
   margin-top: 20px;
 }
@@ -114,7 +113,6 @@
 .cart-product-price-border {
   border-right: 1px solid #e6e6e6;
   height: 180px;
-
 }
 .vendor-border {
   border-right: 1px solid #e6e6e6;
@@ -123,7 +121,7 @@
 .cart-delivery-container {
   padding-top: 20px;
   display: flex;
-  height: 50px;
+  height: 60px;
 }
 .cart-delivery-icon {
   margin-left: 230px;
@@ -131,7 +129,6 @@
 }
 .cart-delivery-text {
   margin-left: 20px;
- 
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -221,8 +218,13 @@
 
 .vendor-logo-size {
   width: 50px;
-  margin-left: 40px;
-  margin-top: 20px;
+  padding-top: 15px;
+  /* margin-left: 40px;
+  margin-top: 20px; */
+}
+.amazon-vendor-logo-size {
+  width: 50px;
+  padding-top: 20px;
 }
 
 @media (max-width: 1280px) {

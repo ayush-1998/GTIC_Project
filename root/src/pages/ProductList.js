@@ -52,10 +52,16 @@ function ProductList() {
                 <Card.Body>
                   <Card.Text
                     className="brand"
-                    style={{ height: "20px", borderBottom: "1px solid #e6e6e6" }}
+                    style={{ height: "20px"}}
                   >
                     Brand: <span style={{ fontWeight: 600 }}>{product.brand}</span>
                   </Card.Text>
+                  <hr
+                    style={{
+                      margin: "4px",
+                      border: "1px solid rgb(207, 207, 207)",
+                    }}
+                  />
                   <p className="brand" style={{ height: "20px" }}>
                     {product.title}
                   </p>
@@ -103,9 +109,9 @@ function ProductList() {
                   </ListGroup.Item>
                 </ListGroup> */}
 
-                  <div className="row">
+                  <div className="row ">
                     <span className="quantity-text">Quantity</span>
-                    <div className="row col-6">
+                    <div className="row col-6 productList-quantity-container">
                       <div className="input-group mb-3 col-12">
                         <button
                           className="input-group-text col-4"
