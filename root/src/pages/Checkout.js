@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 import "../styles/Checkout.css";
 import { GoLocation } from "react-icons/go";
 import { BiTime } from "react-icons/bi";
@@ -15,6 +16,7 @@ const Checkout = () => {
   const [amazon, setAmazon] = useState(new Set());
   const [bigBasket, setBigBasket] = useState(new Set());
   const [blinkit, setBlinkIt] = useState(new Set());
+
 
   useEffect(() => {
     setCart();
@@ -128,7 +130,11 @@ const Checkout = () => {
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by{" "}
+                <span>
+                  Tommorrow, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                  {moment().add(2, "h").format("hh:mm A")}
+                </span>
               </div>
             </div>
             <hr />
@@ -138,7 +144,7 @@ const Checkout = () => {
           {/* Vendor 2 start */}
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
-              <div className="checkout-vendor1">Shipment 1:</div>
+              <div className="checkout-vendor1">Shipment 2:</div>
               <div className="checkout-vendor1-logo">
                 <img src="images/image 98.png" alt="cart" />
               </div>
@@ -169,7 +175,12 @@ const Checkout = () => {
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by{" "}
+                <span>
+                  {" "}
+                  Today, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                  {moment().add(5, "h").format("hh:mm A")}
+                </span>
               </div>
             </div>
             <hr />
@@ -179,7 +190,7 @@ const Checkout = () => {
           {/* Vendor 3 start */}
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
-              <div className="checkout-vendor1">Shipment 1:</div>
+              <div className="checkout-vendor1">Shipment 3:</div>
               <div className="checkout-vendor1-logo">
                 <img src="images/image 102.png" alt="cart" />
               </div>
@@ -210,7 +221,8 @@ const Checkout = () => {
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by{" "}
+                <span>Today, {moment().add(1, "h").format("hh:mm A")}</span>
               </div>
             </div>
             <hr />

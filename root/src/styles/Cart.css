@@ -114,26 +114,32 @@
 .cart-product-price-border {
   border-right: 1px solid #e6e6e6;
   height: 180px;
+
 }
 .vendor-border {
   border-right: 1px solid #e6e6e6;
 }
 
 .cart-delivery-container {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   height: 50px;
 }
 .cart-delivery-icon {
   margin-left: 230px;
+  margin-top: 2px;
 }
 .cart-delivery-text {
   margin-left: 20px;
+ 
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #191919;
+}
+.cart-delivery-text span {
+  font-weight: 600;
 }
 
 .cart-checkoutPrice-container {

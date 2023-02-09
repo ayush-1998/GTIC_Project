@@ -1,11 +1,18 @@
 .filter-container {
   position: absolute;
   width: 248px;
-  height: 1960px;
+  height: 1600px;
   left: 100px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 8px;
+}
+.filter-clear {
+  margin-left: 190px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1b6cb3;
 }
 
 .text-container {
@@ -14,12 +21,17 @@
 }
 .text-icon {
   margin-left: 9px;
+ 
 }
+img, svg {
+    vertical-align:unset; 
+}
+
 
 .filter-title {
   width: 72px;
   height: 25px;
-  margin-top: 20px;
+
   margin-left: 15px;
   font-style: normal;
   font-weight: 600;
@@ -40,7 +52,7 @@
 }
 
 .filter-text {
-  width: 39px;
+  width: 100%;
   height: 19px;
   margin-left: 3px;
   margin-bottom: 5px;
@@ -66,7 +78,8 @@
 .price-input {
   width: 71px;
   height: 36px;
-  margin-left: 15px;
+  margin-left: 7px;
+  margin-right: 5px;
   margin-top: 10px;
   padding-left: 5px;
   background: #ffffff;
@@ -80,6 +93,7 @@
   margin-top: 10px;
   margin-left: 10px;
   background: #5c7f24;
+  border: none;
   border-radius: 8px;
   color: #ffffff;
 }

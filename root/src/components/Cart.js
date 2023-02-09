@@ -6,6 +6,7 @@ import { BiTime } from "react-icons/bi";
 import Filter from "./Filter";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import moment from "moment";
 
 const Cart = () => {
   const cart = useSelector((state) => state);
@@ -110,7 +111,7 @@ const Cart = () => {
       <div className="cart-heading">My Cart</div>
       <div className="cart-container">
         <div className="cart1-container">
-          <div className="row vendor-logo-size1">
+          <span className="row vendor-logo-size1">
             <div className="cart-vendor-logo col-8">
               <p style={{ fontWeight: 600 }}>Items</p>
             </div>
@@ -135,7 +136,7 @@ const Cart = () => {
                 alt="cart"
               />
             </div>
-          </div>
+          </span>
 
           {Array.isArray([...amazon]) ? (
             [...amazon].map((product, key) => {
@@ -235,7 +236,12 @@ const Cart = () => {
               <BiTime />
             </div>
             <div className="cart-delivery-text">
-              Delivery by Tommorrow, between 6:00 PM - 8:00 PM
+              Delivery by{" "}
+              <span>
+                {" "}
+                Tommorrow, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                {moment().add(2, "h").format("hh:mm A")}
+              </span>
             </div>
           </div>
           <hr />
@@ -367,7 +373,11 @@ const Cart = () => {
               <BiTime />
             </div>
             <div className="cart-delivery-text">
-              Delivery by Tommorrow, between 6:00 PM - 8:00 PM
+              Delivery by{" "}
+              <span>
+                Today, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                {moment().add(2, "h").format("hh:mm A")}
+              </span>
             </div>
           </div>
           <hr />
@@ -505,7 +515,8 @@ const Cart = () => {
               <BiTime />
             </div>
             <div className="cart-delivery-text">
-              Delivery by Tommorrow, between 6:00 PM - 8:00 PM
+              Delivery by{" "}
+              <span>Today, {moment().add(1, "h").format("hh:mm A")}</span>
             </div>
           </div>
           <hr />
