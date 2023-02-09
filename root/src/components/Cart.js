@@ -6,6 +6,7 @@ import { BiTime } from "react-icons/bi";
 import Filter from "./Filter";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import moment from "moment";
 
 const Cart = () => {
   const cart = useSelector((state) => state);
@@ -111,11 +112,11 @@ const Cart = () => {
       <div className="cart-container">
         {/* 1st Vendor Start */}
         <div className="cart1-container">
-          {amazon.size!=0 ? (
+          {amazon.size != 0 ? (
             <>
               <div className="row">
                 <div className="cart-vendor-logo col-8">
-                  <p style={{ fontWeight: 600,marginLeft:"20px" }}>Items</p>
+                  <p style={{ fontWeight: 600, marginLeft: "20px" }}>Items</p>
                 </div>
                 <div className="col-1 vendor-border">
                   <img
@@ -149,7 +150,7 @@ const Cart = () => {
                         </div>
                         <div className="cart-productDetail-container col-4">
                           <div className="cart-product-brand">
-                        Brand : <span>{product.brand}</span>
+                            Brand : <span>{product.brand}</span>
                           </div>
                           <div className="cart-product-detail">{product.title}</div>
                         </div>
@@ -166,7 +167,7 @@ const Cart = () => {
                                       handleQuantity(e, product, "decrQuantity");
                                     }}
                                   >
-                                -
+                                    -
                                   </button>
                                   <input
                                     type="text"
@@ -180,7 +181,7 @@ const Cart = () => {
                                       handleQuantity(e, product, "incQuantity");
                                     }}
                                   >
-                                +
+                                    +
                                   </button>
                                 </div>
                               </div>
@@ -193,7 +194,7 @@ const Cart = () => {
                                 removeProduct(product);
                               }}
                             >
-                          Delete
+                              Delete
                             </span>
                             <span className="cart-saveFor">Save for later</span>
                           </div>
@@ -201,7 +202,7 @@ const Cart = () => {
 
                         <div className="cart-product-price cart-product-price-border col-1">
                           <p style={{ marginTop: "20px" }}>
-                        ₹{" "}
+                            ₹{" "}
                             {product.Vendor.reduce(
                               (min, b) => Math.min(min, b.offerPrice),
                               product.Vendor[0].offerPrice,
@@ -210,12 +211,12 @@ const Cart = () => {
                         </div>
                         <div className="cart-product-price cart-product-price-border col-1">
                           <p style={{ marginTop: "20px" }}>
-                        ₹ {product.Vendor[1].offerPrice * product.quantity}
+                            ₹ {product.Vendor[1].offerPrice * product.quantity}
                           </p>
                         </div>
                         <div className="cart-product-price col-1">
                           <p style={{ marginTop: "20px" }}>
-                        ₹ {product.Vendor[2].offerPrice * product.quantity}
+                            ₹ {product.Vendor[2].offerPrice * product.quantity}
                           </p>
                         </div>
                       </div>
@@ -237,7 +238,13 @@ const Cart = () => {
                   <BiTime />
                 </div>
                 <div className="cart-delivery-text">
-              Delivery by Tommorrow, between 6:00 PM - 8:00 PM
+                  Delivery by{" "}
+                  <span>
+                    {" "}
+                    Tommorrow, between {moment()
+                      .add(1, "h")
+                      .format("hh:mm A")} - {moment().add(2, "h").format("hh:mm A")}
+                  </span>
                 </div>
               </div>
               <hr
@@ -250,17 +257,16 @@ const Cart = () => {
           ) : (
             <></>
           )}
-      
-          
+
           {/* First vendor end */}
           {/* second vendor start */}
-          
-          {bigBasket.size!=0 ? (
+
+          {bigBasket.size != 0 ? (
             <>
               <div className="cart1-container">
                 <div className="row vendor-logo-size1">
                   <div className="cart-vendor-logo col-8">
-                    <p style={{ fontWeight: 600,marginLeft:"20px" }}>Items</p>
+                    <p style={{ fontWeight: 600, marginLeft: "20px" }}>Items</p>
                   </div>
                   <div className="col-1 vendor-border">
                     <img
@@ -294,9 +300,11 @@ const Cart = () => {
                           </div>
                           <div className="cart-productDetail-container col-4">
                             <div className="cart-product-brand">
-                          Brand : <span>{product.brand}</span>
+                              Brand : <span>{product.brand}</span>
                             </div>
-                            <div className="cart-product-detail">{product.title}</div>
+                            <div className="cart-product-detail">
+                              {product.title}
+                            </div>
                           </div>
                           <div className="cart-quantity-container col-2">
                             <div className="cart-quantity">Quantity</div>
@@ -311,7 +319,7 @@ const Cart = () => {
                                         handleQuantity(e, product, "decrQuantity");
                                       }}
                                     >
-                                  -
+                                      -
                                     </button>
                                     <input
                                       type="text"
@@ -325,7 +333,7 @@ const Cart = () => {
                                         handleQuantity(e, product, "incQuantity");
                                       }}
                                     >
-                                  +
+                                      +
                                     </button>
                                   </div>
                                 </div>
@@ -338,7 +346,7 @@ const Cart = () => {
                                   removeProduct(product);
                                 }}
                               >
-                            Delete
+                                Delete
                               </span>
                               <span className="cart-saveFor">Save for later</span>
                             </div>
@@ -346,7 +354,7 @@ const Cart = () => {
 
                           <div className="cart-product-price cart-product-price-border col-1">
                             <p style={{ marginTop: "20px" }}>
-                          ₹{" "}
+                              ₹{" "}
                               {product.Vendor.reduce(
                                 (min, b) => Math.min(min, b.offerPrice),
                                 product.Vendor[0].offerPrice,
@@ -355,12 +363,12 @@ const Cart = () => {
                           </div>
                           <div className="cart-product-price cart-product-price-border col-1">
                             <p style={{ marginTop: "20px" }}>
-                          ₹ {product.Vendor[0].offerPrice * product.quantity}
+                              ₹ {product.Vendor[0].offerPrice * product.quantity}
                             </p>
                           </div>
                           <div className="cart-product-price col-1">
                             <p style={{ marginTop: "20px" }}>
-                          ₹ {product.Vendor[2].offerPrice * product.quantity}
+                              ₹ {product.Vendor[2].offerPrice * product.quantity}
                             </p>
                           </div>
                         </div>
@@ -383,7 +391,11 @@ const Cart = () => {
                   <BiTime />
                 </div>
                 <div className="cart-delivery-text">
-              Delivery by Tommorrow, between 6:00 PM - 8:00 PM
+                  Delivery by{" "}
+                  <span>
+                    Today, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                    {moment().add(2, "h").format("hh:mm A")}
+                  </span>
                 </div>
               </div>
               <hr
@@ -396,17 +408,16 @@ const Cart = () => {
           ) : (
             <></>
           )}
-            
 
           {/* second vendor end */}
 
           {/* Third vendor start */}
-          {blinkit.size!=0 ? (
+          {blinkit.size != 0 ? (
             <>
               <div className="cart1-container">
                 <div className="row vendor-logo-size1">
                   <div className="cart-vendor-logo col-8">
-                    <p style={{ fontWeight: 600,marginLeft:"20px" }}>Items</p>
+                    <p style={{ fontWeight: 600, marginLeft: "20px" }}>Items</p>
                   </div>
                   <div className="col-1 vendor-border">
                     <img
@@ -436,16 +447,15 @@ const Cart = () => {
                       <>
                         <div className="cart-product-container row" key={key}>
                           <div className="cart-product-image col-2">
-                            <img
-                              src={product.image}
-                              alt="cart"
-                            />
+                            <img src={product.image} alt="cart" />
                           </div>
                           <div className="cart-productDetail-container col-4">
                             <div className="cart-product-brand">
-                          Brand : <span>{product.brand}</span>
+                              Brand : <span>{product.brand}</span>
                             </div>
-                            <div className="cart-product-detail">{product.title}</div>
+                            <div className="cart-product-detail">
+                              {product.title}
+                            </div>
                           </div>
                           <div className="cart-quantity-container col-2">
                             <div className="cart-quantity">Quantity</div>
@@ -460,7 +470,7 @@ const Cart = () => {
                                         handleQuantity(e, product, "decrQuantity");
                                       }}
                                     >
-                                  -
+                                      -
                                     </button>
                                     <input
                                       type="text"
@@ -474,7 +484,7 @@ const Cart = () => {
                                         handleQuantity(e, product, "incQuantity");
                                       }}
                                     >
-                                  +
+                                      +
                                     </button>
                                   </div>
                                 </div>
@@ -487,7 +497,7 @@ const Cart = () => {
                                   removeProduct(product);
                                 }}
                               >
-                            Delete
+                                Delete
                               </span>
                               <span className="cart-saveFor">Save for later</span>
                             </div>
@@ -495,7 +505,7 @@ const Cart = () => {
 
                           <div className="cart-product-price cart-product-price-border col-1">
                             <p style={{ marginTop: "20px" }}>
-                          ₹{" "}
+                              ₹{" "}
                               {product.Vendor.reduce(
                                 (min, b) => Math.min(min, b.offerPrice),
                                 product.Vendor[0].offerPrice,
@@ -504,12 +514,12 @@ const Cart = () => {
                           </div>
                           <div className="cart-product-price cart-product-price-border col-1">
                             <p style={{ marginTop: "20px" }}>
-                          ₹ {product.Vendor[0].offerPrice * product.quantity}
+                              ₹ {product.Vendor[0].offerPrice * product.quantity}
                             </p>
                           </div>
                           <div className="cart-product-price col-1">
                             <p style={{ marginTop: "20px" }}>
-                          ₹ {product.Vendor[1].offerPrice * product.quantity}
+                              ₹ {product.Vendor[1].offerPrice * product.quantity}
                             </p>
                           </div>
                         </div>
@@ -532,24 +542,29 @@ const Cart = () => {
                   <BiTime />
                 </div>
                 <div className="cart-delivery-text">
-              Delivery by Tommorrow, between 6:00 PM - 8:00 PM
+                  Delivery by{" "}
+                  <span>
+                    Today, between {moment().add(30, "m").format("hh:mm A")} -{" "}
+                    {moment().add(1, "h").format("hh:mm A")}
+                  </span>
                 </div>
               </div>
-              <hr
-                style={{
-                  margin: "0rem",
-                  border: "1px solid rgb(207, 207, 207)",
-                }}
-              />
             </>
           ) : (
             <></>
           )}
-            
-
+          <hr
+            style={{
+              margin: "0rem",
+              border: "1px solid rgb(207, 207, 207)",
+              marginBottom: "35px"
+            }}
+          />
           <div className="cart-checkoutPrice-container">
             <div className="cart-chekoutPrice-left">
-              <div className="cart-subtotal">Subtotal ({cart.length} items): ₹ {total()[0]}</div>
+              <div className="cart-subtotal">
+                Subtotal ({cart.length} items): ₹ {total()[0]}
+              </div>
               <div className="cart-saving"> Saving: ₹ {total()[1]}</div>
             </div>
             <Link to="/checkout">

@@ -67,7 +67,7 @@
 
 .checkout-address-icon {
   margin-left: 15px;
-  margin-top: 25px;
+  margin-top: 29px;
 }
 .checkout-address-heading {
   width: 120px;
@@ -119,7 +119,7 @@
 
 .checkout-delivery-icon {
   margin-left: 15px;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 .checkout-delivery-heading {
   width: 120px;
@@ -207,7 +207,7 @@
   border-radius: 4px;
 }
 .checkout-deliveryTime-icon {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 .checkout-deliveryTime-text {
@@ -236,7 +236,7 @@
 }
 .checkout-payment-icon {
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 12px;
   color: #999999;
 }
 .checkout-payment-text {
@@ -254,7 +254,7 @@
 }
 .checkout-otherPayment-icon {
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 12px;
   color: #999999;
 }
 .checkout-otherPayment-text {

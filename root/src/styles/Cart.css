@@ -119,12 +119,13 @@
 }
 
 .cart-delivery-container {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
-  height: 50px;
+  height: 60px;
 }
 .cart-delivery-icon {
   margin-left: 230px;
+  margin-top: 2px;
 }
 .cart-delivery-text {
   margin-left: 20px;
@@ -133,6 +134,9 @@
   font-size: 16px;
   line-height: 22px;
   color: #191919;
+}
+.cart-delivery-text span {
+  font-weight: 600;
 }
 
 .cart-checkoutPrice-container {
@@ -218,7 +222,7 @@
   /* margin-left: 40px;
   margin-top: 20px; */
 }
-.amazon-vendor-logo-size{
+.amazon-vendor-logo-size {
   width: 50px;
   padding-top: 20px;
 }

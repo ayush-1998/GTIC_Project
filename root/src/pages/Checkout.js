@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 import "../styles/Checkout.css";
 import { GoLocation } from "react-icons/go";
 import { BiTime } from "react-icons/bi";
@@ -128,7 +129,11 @@ const Checkout = () => {
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by{" "}
+                <span>
+                  Tommorrow, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                  {moment().add(2, "h").format("hh:mm A")}
+                </span>
               </div>
             </div>
             <hr />
@@ -169,7 +174,12 @@ const Checkout = () => {
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by{" "}
+                <span>
+                  {" "}
+                  Today, between {moment().add(1, "h").format("hh:mm A")} -{" "}
+                  {moment().add(2, "h").format("hh:mm A")}
+                </span>
               </div>
             </div>
             <hr />
@@ -210,7 +220,11 @@ const Checkout = () => {
                 <BiTime />
               </div>
               <div className="checkout-deliveryTime-text">
-                Delivery by <span>Tommorrow, between 6:00 PM - 8:00 PM</span>
+                Delivery by{" "}
+                <span>
+                    Today, between {moment().add(30, "m").format("hh:mm A")} -{" "}
+                  {moment().add(1, "h").format("hh:mm A")}
+                </span>
               </div>
             </div>
             <hr />

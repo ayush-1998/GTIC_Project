@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "../styles/Filter.css";
 import { productsData } from "../db";
 import { RiArrowDropUpLine } from "react-icons/ri";
+import { BsDash } from "react-icons/bs";
 
 const Filter = () => {
   const [filterProducts, setFilterProducts] = useState([]);
@@ -34,6 +35,7 @@ const Filter = () => {
   return (
     <>
       <div className="filter-container">
+        <span className="filter-clear">Clear</span>
         <p className="filter-title">Filter By</p>
         <hr />
         <p className="filter-heading">Grocery Offers</p>
@@ -42,7 +44,7 @@ const Filter = () => {
           <div className="text-icon">
             <RiArrowDropUpLine />
           </div>
-          <div className="filter-text">PRICE</div>
+          <div className="filter-text">Price Range</div>
         </div>
         <div className="filter-range">Enter a price range</div>
         <div className="input-container">
@@ -53,7 +55,7 @@ const Filter = () => {
             id="text"
             defaultValue="10"
           ></input>
-
+          <BsDash />
           <input
             className="price-input"
             type="text"
@@ -70,7 +72,7 @@ const Filter = () => {
           <div className="text-icon">
             <RiArrowDropUpLine />
           </div>
-          <div className="filter-text">PRICE</div>
+          <div className="filter-text">Price</div>
         </div>
         <input
           className="searchbrand"
@@ -101,7 +103,7 @@ const Filter = () => {
           <div className="text-icon">
             <RiArrowDropUpLine />
           </div>
-          <div className="filter-text">DELIVERY</div>
+          <div className="filter-text">Delivery</div>
         </div>
         <input
           className="searchbrand"
@@ -124,7 +126,7 @@ const Filter = () => {
             type="checkbox"
             id="flexCheckDefault"
           />
-          <label className="form-check-label">1 hr - 2 hr</label>
+          <label className="form-check-label">1 hr - 5 hr</label>
         </div>
         <div className="form-check">
           <input
@@ -139,7 +141,7 @@ const Filter = () => {
           <div className="text-icon">
             <RiArrowDropUpLine />
           </div>
-          <div className="filter-text">POPULARITY</div>
+          <div className="filter-text">Popularity</div>
         </div>
         <input
           className="searchbrand"
@@ -172,20 +174,20 @@ const Filter = () => {
           />
           <label className="form-check-label">3 star</label>
         </div>
-        <div className="form-check">
+        {/* <div className="form-check">
           <input
             className="form-check-input"
             type="checkbox"
             id="flexCheckDefault"
           />
           <label className="form-check-label">4 star</label>
-        </div>
+        </div> */}
         <hr />
         <div className="text-container">
           <div className="text-icon">
             <RiArrowDropUpLine />
           </div>
-          <div className="filter-text">BRAND</div>
+          <div className="filter-text">Brand</div>
         </div>
         <input
           className="searchbrand"
@@ -246,7 +248,7 @@ const Filter = () => {
             <label className="form-check-label">Saffola (15)</label>
           </div>
 
-          <div className="form-check">
+          {/* <div className="form-check">
             <input
               className="form-check-input"
               type="checkbox"
@@ -353,13 +355,13 @@ const Filter = () => {
               onChange={handleChange}
             />
             <label className="form-check-label">Maggi (23)</label>
-          </div>
+          </div> */}
           <hr />
           <div className="text-container">
             <div className="text-icon">
               <RiArrowDropUpLine />
             </div>
-            <div className="filter-text">VARIANT</div>
+            <div className="filter-text">Variant</div>
           </div>
           <input
             className="searchbrand"
@@ -413,7 +415,7 @@ const Filter = () => {
             <div className="text-icon">
               <RiArrowDropUpLine />
             </div>
-            <div className="filter-text">TYPE</div>
+            <div className="filter-text">Type</div>
           </div>
           <input
             className="searchbrand"
@@ -472,7 +474,7 @@ const Filter = () => {
             />
             <label className="form-check-label">Dry Fruits (32)</label>
           </div>
-          <div className="form-check">
+          {/* <div className="form-check">
             <input
               className="form-check-input"
               type="checkbox"
@@ -521,13 +523,13 @@ const Filter = () => {
               onChange={handleChange}
             />
             <label className="form-check-label">Instant Food (32)</label>
-          </div>
+          </div> */}
           <hr />
           <div className="text-container">
             <div className="text-icon">
               <RiArrowDropUpLine />
             </div>
-            <div className="filter-text">SIZE</div>
+            <div className="filter-text">Size</div>
           </div>
           <input
             className="searchbrand"
@@ -567,6 +569,14 @@ const Filter = () => {
               id="flexCheckDefault"
             />
             <label className="form-check-label">100 gm (32)</label>
+          </div>
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="flexCheckDefault"
+            />
+            <label className="form-check-label">400 gm (32)</label>
           </div>
 
           {/* <div className="form-check">
