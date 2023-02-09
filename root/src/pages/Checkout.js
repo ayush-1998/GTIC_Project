@@ -138,7 +138,7 @@ const Checkout = () => {
           {/* Vendor 2 start */}
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
-              <div className="checkout-vendor1">Shipment 1:</div>
+              <div className="checkout-vendor1">Shipment 2:</div>
               <div className="checkout-vendor1-logo">
                 <img src="images/image 98.png" alt="cart" />
               </div>
@@ -179,7 +179,7 @@ const Checkout = () => {
           {/* Vendor 3 start */}
           <div className="checkout-vendor1-container">
             <div className="checkout-vendor1-details">
-              <div className="checkout-vendor1">Shipment 1:</div>
+              <div className="checkout-vendor1">Shipment 3:</div>
               <div className="checkout-vendor1-logo">
                 <img src="images/image 102.png" alt="cart" />
               </div>
