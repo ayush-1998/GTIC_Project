@@ -48,7 +48,7 @@
 .product-container {
   position: absolute;
   display: flex;
-  left: 290px;
+  left: 340px;
   top: 200px;
   width: 78%;
   padding: 20px;
@@ -137,7 +137,13 @@
   line-height: 16px;
   color: #666666;
 }
-.productList-quantity-container{
+.productList-quantity-container {
   width: 170px;
   height: 40px;
+}
+@media (max-width: 1280px) {
+   .product-container{
+    left: 290px;
+  
+  }
 }

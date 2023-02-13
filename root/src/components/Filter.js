@@ -79,7 +79,7 @@ const Filter = () => {
           type="text"
           name="text"
           id="text"
-          placeholder="Search Type"
+          placeholder="Search Popularity"
         ></input>
         <div className="form-check">
           <input
@@ -110,7 +110,7 @@ const Filter = () => {
           type="text"
           name="text"
           id="text"
-          placeholder="Search Type"
+          placeholder="Search Delivery"
         ></input>
         <div className="form-check">
           <input
@@ -148,7 +148,7 @@ const Filter = () => {
           type="text"
           name="text"
           id="text"
-          placeholder="Search Type"
+          placeholder="Search Popularity"
         ></input>
         <div className="form-check">
           <input

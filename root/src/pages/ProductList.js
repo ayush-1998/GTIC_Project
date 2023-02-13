@@ -50,10 +50,7 @@ function ProductList() {
                   src={product.image}
                 />
                 <Card.Body>
-                  <Card.Text
-                    className="brand"
-                    style={{ height: "20px"}}
-                  >
+                  <Card.Text className="brand" style={{ height: "20px" }}>
                     Brand: <span style={{ fontWeight: 600 }}>{product.brand}</span>
                   </Card.Text>
                   <hr

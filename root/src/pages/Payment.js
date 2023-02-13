@@ -46,8 +46,8 @@ const Payment = () => {
             </div>
             <div className="payment-address-heading">Delivery Address</div>
             <div className="payment-address">
-              B-1 Times Square Building Near Marol Metro Station, Andheri - Kurla Rd,
-              Andheri East, Mumbai, Maharashtra 400059
+              ROW HOUSE-6, CASSIA, Lane, opp. Krushna Medical, Pune, Maharashtra
+              411045
             </div>
             <button type="button" className="btn btn-success payment-change-btn1">
               Change

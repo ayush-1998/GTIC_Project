@@ -98,7 +98,7 @@ const Cart = () => {
 
   // console.log(tatal[0])
   return (
-    <div className="mycart-container">
+    <div className={cart.length < 7 ? "mycart-container" : "mycart2-container"} >
       <div className="cart-text-container">
         <div className="cart-text1">Home &gt;</div>
         <div className="cart-text2">Grocery Offers &gt;</div>
@@ -557,7 +557,7 @@ const Cart = () => {
             style={{
               margin: "0rem",
               border: "1px solid rgb(207, 207, 207)",
-              marginBottom: "35px"
+              marginBottom: "35px",
             }}
           />
           <div className="cart-checkoutPrice-container">

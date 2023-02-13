@@ -74,8 +74,8 @@ const Checkout = () => {
             </div>
             <div className="checkout-address-heading">Delivery Address</div>
             <div className="checkout-address">
-              B-1 Times Square Building Near Marol Metro Station, Andheri - Kurla Rd,
-              Andheri East, Mumbai, Maharashtra 400059
+              ROW HOUSE-6, CASSIA, Lane, opp. Krushna Medical, Pune, Maharashtra
+              411045
             </div>
             <button type="button" className="btn btn-success checkout-change-btn1">
               Change
@@ -222,7 +222,7 @@ const Checkout = () => {
               <div className="checkout-deliveryTime-text">
                 Delivery by{" "}
                 <span>
-                    Today, between {moment().add(30, "m").format("hh:mm A")} -{" "}
+                  Today, between {moment().add(30, "m").format("hh:mm A")} -{" "}
                   {moment().add(1, "h").format("hh:mm A")}
                 </span>
               </div>

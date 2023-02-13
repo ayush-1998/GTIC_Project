@@ -115,7 +115,7 @@ const Header = () => {
           </div>
           <div className="loyalty-content">
             Loyalty Points
-            <div>270</div>
+            <div>207</div>
           </div>
         </div>
       </div>

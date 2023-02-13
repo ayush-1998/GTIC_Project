@@ -1,11 +1,15 @@
 .mycart-container {
   background: #e6e6e6;
-  height: 2900px;
+  height: 1700px;
+}
+.mycart2-container {
+  background: #e6e6e6;
+  height: auto;
 }
 .cart-heading {
   position: absolute;
-  top: 120px;
-  left: 90px;
+  top: 140px;
+  left: 260px;
   margin-left: 610px;
   margin-top: 20px;
   font-weight: 600;
@@ -14,9 +18,10 @@
   color: #000000;
 }
 .cart-container {
-  width: 950px;
+  width: 870px;
   position: relative;
   left: 250px;
+  bottom: 20px;
   padding-bottom: 10px;
   margin-left: 200px;
   border-radius: 8px;
@@ -29,7 +34,7 @@
 
 .cart-vendor-logo {
   margin-top: 15px;
-  margin-right: 59px;
+  margin-right: 52px;
 }
 
 .cart-product-container {
@@ -124,7 +129,7 @@
   height: 60px;
 }
 .cart-delivery-icon {
-  margin-left: 230px;
+  margin-left: 150px;
   margin-top: 2px;
 }
 .cart-delivery-text {
@@ -232,4 +237,11 @@
     width: 850px;
     margin-left: 100px;
   }
+  .cart-heading {
+  left: 90px;
+}
+.cart-vendor-logo {
+  margin-right: 59px;
+}
+
 }

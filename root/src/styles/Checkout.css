@@ -67,22 +67,22 @@
 
 .checkout-address-icon {
   margin-left: 15px;
-  margin-top: 29px;
+  margin-top: 33px;
 }
 .checkout-address-heading {
-  width: 120px;
+  width: 150px;
   margin-left: 10px;
   margin-top: 28px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   color: #191919;
 }
 .checkout-address {
-  width: 400px;
+  width: 350px;
   margin-left: 20px;
   margin-top: 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   color: #191919;
 }
@@ -119,22 +119,22 @@
 
 .checkout-delivery-icon {
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 .checkout-delivery-heading {
-  width: 120px;
+  width: 150px;
   margin-left: 10px;
   margin-top: 10px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   color: #191919;
 }
 .checkout-delivery {
-  width: 400px;
+  width: 350px;
   margin-left: 20px;
   margin-top: 10px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   color: #191919;
 }
@@ -341,7 +341,7 @@
   color: #191919;
 }
 .checkout-checkbox-container span {
-  margin-left: 100px;
+  margin-left: 93px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
